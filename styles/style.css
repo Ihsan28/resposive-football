@@ -1,1 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* google fonts poppins added */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-------------
+Top Section 
+-------------*/
+.top-container {
+    background-color: #2D25A0;
+    height: 677px;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.top-container div h1 {
+    font-size: 4em;
+    color: white;
+}
+
+.btn-content{
+    display: flex;
+    overflow: hidden;
+    margin-top: 28px;
+    width: 168px;
+    height: 44px;
+}
+
+.btn {
+    display: block;
+    
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    width: 168px;
+    height: 44px;
+    transition: transform .5s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.4);
+}
+
+.btn-container {
+    background-color: #E02C6D;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+
+}
+
+.arrow {
+    margin-left: 10px;
+}
+
+.img-banner {
+    height: 438px;
+    width: 556px;
+}
+
+/*-----------
+ Player News
+ ------------*/
+
+.players-container {
+    display: flex;
+    justify-content: center;
+}
+
+.player-box {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 70px 210px 165px 210px;
+    width: 1050px;
+}
+
+.player-view {
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    box-shadow: 0 0 10px 4px rgb(228, 222, 222);
+}
+
+.player-view img {
+    width: 100%;
+}
+
+.player-name {
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+.player-news {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+
+/*--------------
+ watch bonus
+ ---------------*/
+.watch-highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    margin: 0px 350px;
+    align-items: center;
+    grid-gap: 50px;
+    padding: 50px;
+}
+
+.bonus img {
+    width: 567px;
+    height: 427px;
+}
+/* --------------------------------
+        footer part
+----------------------------------- */
+footer {
+    display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px;
+margin-top: 110px;
+}
+
+.foot {
+    display: flex;
+flex-direction: column;
+justify-content:space-between;
+margin-bottom: 63px;
+position: static;
+width: 483.87px;
+height: 213px;
+left: 475px;
+top: 3474px;
+
+}
+
+.foot img{
+position: static;
+width: 483.87px;
+height: 110px;
+left: 0px;
+top: 0px;
+margin: 0px 0px;
+}
+
+.foot h6{
+font-size: 18px;
+font-weight: normal;
+line-height: 24px;
+text-align: center;
+position: static;
+bottom: 0%;
+}
+
+.social-links{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.social-links a{
+    color: rgba(128, 128, 128, 0.603);
+    margin: 0px 14px;
+    font-size: 32px;
+    
+}
+
+/* -------------------------------
+        media query part
+--------------------------------- */
+@media only screen and (max-width: 688px) {
+
+    /* Player News */
+    .p-box {
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
