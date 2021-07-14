@@ -13,7 +13,7 @@ body {
 /*-------------
 Top Section 
 -------------*/
-.top-container {
+.top {
     background-color: #2D25A0;
     height: 677px;
     padding: 100px;
@@ -23,11 +23,19 @@ Top Section
 
 }
 
-.top-container div h1 {
+.top div h1 {
     font-size: 4em;
     color: white;
 }
 
+.img-banner {
+    height: 438px;
+    width: 556px;
+}
+
+/* -------------------
+    button  styles 
+------------------- */
 .btn-content{
     display: flex;
     overflow: hidden;
@@ -67,10 +75,7 @@ Top Section
     margin-left: 10px;
 }
 
-.img-banner {
-    height: 438px;
-    width: 556px;
-}
+
 
 /*-----------
  Player News
@@ -116,7 +121,7 @@ Top Section
 /*--------------
  watch bonus
  ---------------*/
-.watch-highlight {
+.bonus {
     display: grid;
     grid-template-columns: 1fr 1fr;
    
@@ -126,7 +131,7 @@ Top Section
     padding: 50px;
 }
 
-.bonus img {
+.bonus-img img {
     width: 567px;
     height: 427px;
 }
@@ -190,10 +195,80 @@ bottom: 0%;
 --------------------------------- */
 @media only screen and (max-width: 688px) {
 
+
+    .body {
+        width: 70%;
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+    }
+    
+    .top {
+        background-color: #2D25A0;
+        height: 695px;
+        padding: 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+
+    .img-banner {
+        width: 329px;
+        height: 260px;
+    }
+    
+    .top div h1 {
+        font-size: 3em;
+        color: white;
+    }
+
     /* Player News */
-    .p-box {
+    .player-box {
         grid-template-rows: repeat(12, 1fr);
         grid-template-columns: repeat(1, 1fr);
+        justify-content:center;
+        /* align-items: center; */
+        width: 100%;
+    }
+
+
+    .bonus {
+        display: block;
+        /* grid-template-rows: 1fr 1fr; */
+        width: 100%;
+       
+        margin: 10px 0px;
+        justify-content:center;
+        align-items: center;
+        grid-gap: 50px;
+        padding: 50px 0px;
+    }
+
+    .bonus>div{
+        margin: 30px;
+    }
+
+    .bonus img{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .foot{
+        width: 170px;
+        height: 32px;
+        margin-bottom: 180px;
+    }
+
+    .foot img{
+        height:63px;
+        width: 100%;
     }
 
 }
