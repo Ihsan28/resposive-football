@@ -134,8 +134,16 @@ Top Section
 
 .bonus-img img {
     width: 567px;
-    height: 427px;
+    height: 927px;
 }
+
+.bonus-img{
+    transition: transform 1s ease-in;
+}
+.bonus-img:hover{
+    transform: rotate(360deg);
+}
+
 /* --------------------------------
         footer part
 ----------------------------------- */
@@ -253,9 +261,12 @@ bottom: 0%;
     }
 
     .bonus img{
+        
         width: 328px;
-        height: 248px;
+        height: 548px;
     }
+
+    
 
     footer{
         width: 100%;
