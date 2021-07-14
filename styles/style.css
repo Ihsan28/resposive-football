@@ -127,6 +127,7 @@ Top Section
    
     margin: 0px 350px;
     align-items: center;
+    justify-content: center;
     grid-gap: 50px;
     padding: 50px;
 }
@@ -243,7 +244,7 @@ bottom: 0%;
         margin: 10px 0px;
         justify-content:center;
         align-items: center;
-        grid-gap: 50px;
+        /* grid-gap: 50px; */
         padding: 50px 0px;
     }
 
